@@ -1,0 +1,47 @@
+:root {
+    --azul-fundo: #EAF2FD;
+    --azul-links: #2A7AE4;
+    --azul-hoverlogo: #D4E4FA;
+    --azul-hover: #5595E9;
+    --branco: #FFFFFF;
+    --cinza-pesquisa: #F5F5F5;
+    --cinza-fundo: #E5E5E5;
+    --cinza-texto: #A2A2A2;
+    --preto-texto: #464646;
+
+    --raleway: 'Raleway', sans-serif;
+    
+}
+
+* {
+    box-sizing: border-box;
+    font-family: var(--raleway);
+}
+
+.container {
+    padding-right: 6%;
+    padding-left: 6%;
+}
+
+.img1 {
+    width: 100%;
+}
+
+
+.botao {
+    color: var(--azul-links);
+    background-color: transparent;
+    background-image: url(../img/Vector\ \(1\).svg);
+    background-position: right;
+    background-repeat: no-repeat;
+    border: none;
+    padding: 0 1.5rem;
+}
+
+main {
+    background-color: var(--cinza-fundo);
+}
+
+.Produtos_botao:hover {
+    cursor: pointer;
+}

@@ -1,0 +1,34 @@
+.rodape {
+    width: 100%;
+    background-color: #EAF2FD;
+}
+
+.rodape_txt {
+    display: flex;
+    justify-content: space-between;
+}
+
+.rodape_nav {
+    font-family: var(--raleway);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+footer div a {
+    margin: 12px 0;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+}
+
+.final {
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    margin: 2rem 0;
+}

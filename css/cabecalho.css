@@ -1,0 +1,219 @@
+:root {
+    --azul-fundo: #EAF2FD;
+    --azul-links: #2A7AE4;
+    --azul-hoverlogo: #D4E4FA;
+    --azul-hover: #5595E9;
+    --branco: #FFFFFF;
+    --cinza-pesquisa: #F5F5F5;
+    --cinza-fundo: #E5E5E5;
+    --cinza-texto: #A2A2A2;
+    --preto-texto: #464646;
+
+    --raleway: 'Raleway', sans-serif;
+}
+
+
+.cabecalho {
+    background: #ffffff;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.cabecalho__navegacao {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    border: 1px solid #2a7ae4;
+    width: 182px;
+    height: 51px;
+}
+
+.cabecalho__link {
+    color: #2A7AE4;
+    width: 100%;
+}
+
+.Logo {
+    display: flex;
+    text-align: center;
+}
+
+#divBusca {
+    display: flex;
+    align-items: center;
+}
+
+.cabecalho__menu--busca1 {
+    margin-left: 1rem;
+    background-color: var(--cinza-pesquisa);
+    background-image: url(../img/Vector.svg);
+    background-position: center;
+    background-position-x: 17rem;
+    background-repeat: no-repeat;
+    border-radius: 20px;
+    border: none;
+    display: flex;
+    height: 40px;
+    padding-left: 1rem;
+    width: 300px;
+}
+
+.banner {
+    background-image: url(../img/banner.png);
+    height: 352px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    justify-content: flex-end;
+}
+
+.banner_titulo {
+    font-size: 80px;
+    color: white;
+}
+
+.banner_texto {
+    font-size: 22px;
+    color: white;
+}
+
+.banner_link {
+    display: flex;
+    margin: 15px 0;
+    justify-content: center;
+    align-items: center;
+    width: 130px;
+    height: 51px;
+    background: #2A7AE4;
+    font-size: 16px;
+    color: white;
+}
+
+.produtos_cabecalho {
+    margin-top: 4rem;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+
+.produtos_titulo {
+    font-family: var(--raleway);
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 37px;
+}
+
+.produtos_conteudo {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 0.5rem;
+}
+
+.produtos_card {
+    width: 15.5%;
+    display: grid;
+    grid-template-areas: "card-imagem"
+        "card-corpo";
+    grid-template-columns: 100%;
+    margin-bottom: 1rem;
+}
+
+.produtos_card--img {
+    display: grid;
+    grid-area: card-imagem;
+    height: 100%;
+    width: 100%;
+}
+
+.produtos_card--corpo {
+    display: grid;
+    grid-area: card-corpo;
+    row-gap: 0.25rem;
+    grid-template-rows: 20% 40% 20%;
+}
+
+.produtos_card_link {
+    font-family: var(--raleway);
+    color: #2A7AE4;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+}
+
+.produtos_card_titulo {
+    font-family: var(--raleway);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    margin-bottom: 3rem;
+}
+
+.produtos_preco {
+    font-weight: 600;
+}
+
+
+.Lupa {
+    display: none;
+}
+
+@media screen and (max-width:768px) {
+    .produtos_card:nth-child(5) {
+        display: none;
+        grid-row: none;
+        grid-column: none;
+    }
+
+    .produtos_card:nth-child(6) {
+        display: none;
+        grid-row: none;
+        grid-column: none;
+    }
+
+    .produtos_card {
+        width: 24%;
+    }
+
+    .logoAlura {
+        width: 100px;
+        height: 28px;
+    }
+
+    .cabecalho__menu--busca1 {
+        width: 272px;
+        height: 40px;
+        background-position-x: 15rem;
+    }
+
+    .cabecalho__navegacao {
+        width: 166px;
+        height: 40px;
+    }
+}
+
+@media screen and (max-width:530px) {
+    .cabecalho__menu--busca1 {
+        display: none;
+    }
+
+    .Lupa {
+        display: inline-block;
+    }
+
+    .banner_titulo {
+        font-size: 50px;
+    }
+}
+
+@media screen and (max-width: 680px) {
+    .produtos_card {
+        width: 49%;
+    }
+}
